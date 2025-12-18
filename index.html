@@ -118,6 +118,59 @@
             .container{flex-direction:column}
             .left,.right{width:100%}
         }
+        @media print {
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body {
+        background: none;
+    }
+    .container {
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    }
+
+
+    .container {
+        display: table;
+        width: 100%;
+        border: 1.5px solid #000;
+        box-shadow: none;
+    }
+
+    .left, .right {
+        display: table-cell;
+        vertical-align: top;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .left {
+        width: 32%;
+        background-color: #f0fdf4 !important;
+    }
+
+    .right {
+        width: 68%;
+    }
+
+    .container {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .footer-note {
+        display: none !important;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -232,4 +285,5 @@
     </div>
 </div>
 </body>
+
 </html>
