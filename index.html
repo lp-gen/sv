@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Himesh Kumar Sharma - Resume</title>
+    <style>
+        :root{
+            --primary:#14532d;        /* dark green */
+            --secondary:#ecfdf5;      /* light green */
+            --accent:#4ade80;         /* green accent */
+            --dark:#064e3b;           /* deep green */
+            --muted:#6b7280;          /* gray */
+        }
+        *{box-sizing:border-box}
+        body{
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg,#eef7f6,#f6f8fb);
+            margin:0; padding:0; color:#111827;
+        }
+        .container{
+            max-width: 980px;
+            margin: 28px auto;
+            background:#fff;
+            display:flex;
+            border-radius:14px;
+            overflow:hidden;
+            border:2px solid #86efac; /* green border */
+            box-shadow:0 18px 40px rgba(6,78,59,.18);
+        }
+        .left{
+            width:32%;
+            background: linear-gradient(180deg,#ecfdf5,#f0fdf4);
+            padding:26px 22px;
+            border-right:2px solid #86efac;
+        }
+        .right{
+            width:68%;
+            padding:28px 30px;
+        }
+        h1{
+            margin:0 0 6px 0;
+            font-size:28px;
+            letter-spacing:1px;
+            color:var(--dark);
+            line-height:1.15;
+        }
+        .tag{
+            display:inline-block;
+            margin-top:6px;
+            padding:6px 12px;
+            border-radius:999px;
+            background:rgba(255,183,3,.15);
+            color:#7a5200;
+            font-weight:600;
+            font-size:13px;
+        }
+        h2{
+            font-size:16px;
+            margin:22px 0 10px;
+            color:var(--primary);
+            display:flex; align-items:center; gap:8px;
+        }
+        h2::after{
+            content:""; flex:1; height:2px; background:linear-gradient(90deg,var(--primary),transparent);
+        }
+        p{font-size:14px; margin:6px 0; line-height:1.6}
+        ul{padding-left:18px; margin:6px 0}
+        li{font-size:14px; margin-bottom:6px}
+        .section{margin-bottom:18px}
+
+        /* CONTACT */
+        .contact-box{
+            background:#fff;
+            border:1px solid #e5e7eb;
+            padding:14px;
+            border-radius:10px;
+        }
+        .contact-item{font-size:13px; margin-bottom:10px}
+        .contact-item strong{color:var(--dark)}
+        .contact-item a{color:var(--primary); text-decoration:none}
+        .contact-item a:hover{text-decoration:underline}
+
+        /* SKILLS */
+        .skills-box{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+        .skill{
+            padding:7px 14px;
+            border-radius:999px;
+            font-size:13px; font-weight:600;
+            color:#fff;
+            background:linear-gradient(135deg,var(--primary),#3aa7b3);
+            box-shadow:0 6px 14px rgba(31,111,120,.25);
+        }
+
+        /* EDUCATION */
+        .edu-item{margin-bottom:16px}
+        .edu-title{font-weight:700}
+        .edu-school{font-style:italic; color:var(--muted)}
+        .edu-extra{font-size:13px; color:#374151}
+
+        .badge{
+            display:inline-block;
+            padding:4px 10px;
+            border-radius:6px;
+            background:#ecfeff;
+            color:var(--dark);
+            font-size:12px; font-weight:600;
+            margin-top:6px;
+        }
+        .project{
+            border-left:4px solid var(--primary);
+            padding-left:14px;
+            margin-bottom:16px;
+        }
+        .small{font-size:13px; color:var(--muted)}
+        .footer-note{font-size:12px; color:var(--muted); margin-top:20px}
+
+        @media (max-width: 820px){
+            .container{flex-direction:column}
+            .left,.right{width:100%}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- LEFT -->
+    <div class="left">
+        <h1>HIMESH<br>KUMAR SHARMA</h1>
+        <span class="tag">B.Tech CSE Student</span>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <div class="contact-item"><strong>Email</strong><br>shimesh974@gmail.com</div>
+                <div class="contact-item"><strong>Phone</strong><br>8822961408</div>
+                <div class="contact-item"><strong>Location</strong><br>Delhi, India</div>
+                <div class="contact-item"><strong>GitHub</strong><br>
+                    <a href="https://github.com/himesh2360" target="_blank">github.com/himesh2360</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-box">
+                <span class="skill">C Language</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS (Basic)</span>
+                <span class="skill">Logical Thinking</span>
+                <span class="skill">Problem Solving</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>English – Intermediate</li>
+                <li>Hindi – Upper Intermediate</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Learning Goals & Interests</h2>
+            <ul>
+                <li>JavaScript for backend development</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Modern web technologies</li>
+                <li>Robotics & Embedded Systems</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <div class="section">
+            <h2>Profile</h2>
+            <p>Motivated Computer Science Engineering student with interest in web development and programming fundamentals. Passionate about learning new technologies and building practical projects.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <p class="edu-title">Bachelor of Technology – Computer Science Engineering</p>
+                <p class="edu-school">Manav Rachna University, Faridabad</p>
+                <p class="edu-extra">Expected Graduation: 2029</p>
+            </div>
+            <div class="edu-item">
+                <p class="edu-title">Senior Secondary (Class XII)</p>
+                <p class="edu-school">Prince Education Hub, Sikar, Rajasthan</p>
+                <p class="edu-extra">Percentage: 81%</p>
+            </div>
+            <div class="edu-item">
+                <p class="edu-title">Secondary (Class X)</p>
+                <p class="edu-school">Kendriya Vidyalaya No. 2, Delhi Cantt</p>
+                <p class="edu-extra">Percentage: 86%</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <p><strong>Spotify Clone (Frontend)</strong><br><span class="small">HTML & CSS • YouTube-guided</span></p>
+                <ul>
+                    <li>Static frontend with responsive layout</li>
+                    <li>Focused on UI structure and styling</li>
+                </ul>
+            </div>
+            <div class="project">
+                <p><strong>Blinkit Clone (Frontend)</strong><br><span class="small">HTML & CSS • UI Practice</span></p>
+                <ul>
+                    <li>E-commerce style layout</li>
+                    <li>Improved spacing and consistency</li>
+                </ul>
+            </div>
+            <div class="project">
+                <p><strong>Fire Fighting Robot (Group Project)</strong><br><span class="small">Arduino Uno • Flame Sensor</span></p>
+                <ul>
+                    <li>Flame detection and autonomous movement</li>
+                    <li>Motor control with Arduino</li>
+                    <li>Water spraying mechanism</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certificates</h2>
+            <ul>
+                <li>Creovate 2K25 – University tech fest</li>
+                <li>INFOMANIA Quiz – Cyber awareness</li>
+            </ul>
+        </div>
+        <div class="footer-note">Designed with clean UI, soft colors, and print‑friendly layout.</div>
+    </div>
+</div>
+</body>
+</html>
+
